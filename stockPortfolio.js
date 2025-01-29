@@ -1,6 +1,6 @@
 class StockPortfolio {
 	  constructor() {
-		      this.stocks = {}; // Stores stocks and their share count
+		      this.stocks = {}; 
 		    }
 
 	  getStocks() {
@@ -20,7 +20,7 @@ class StockPortfolio {
 			            throw new Error('Not possible to sell this number of shares.');
 			          }
 		      this.stocks[symbol] -= shares;
-		      if (this.stocks[symbol] === 0) delete this.stocks[symbol]; // Remove if zero
+		      if (this.stocks[symbol] === 0) delete this.stocks[symbol];
 		    }
 
 	  countUniqueSymbols() {
